@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700');
+body{
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 20px;
+}
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2.3rem;
+}
+h3{
+  font-size: 1.7rem;
+}
+.phone-header{
+height: 50px;
+width: 100%;
+background-color: #e3e3e3;
+}
+.phone-header ul li{
+  display: inline-block;
+}
+.phone-header ul{
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.phone-header-right li{
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin-left: 20px;
+}
+.phone-header-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone-header-left a{
+  text-decoration: none;
+
+}
+.phone-header-left li:last-child{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.phone-header-left li:first-child{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  margin-left: 10px;
+}
+.phone-header-left li{
+  border: 1px solid #f7970f;
+  color:white;
+  background-color: rgba(	247,	151,	15, .7);
+  height: 35px;
+  padding: 5px 10px;
+  margin: 1px;
+}
+.phone-header-left li:hover{
+    background-color: rgba(	247,	151,	15, 1);
+}
+.phone-header-right{
+  margin-right: 30px;
+}
+.phone-header-right img{
+  width: 30px;
+}
+.workstation-secton{
+  width: 79%;
+  margin: 15px;
+  height: 90vh;
+  min-height: 350px;
+  display: inline-block;
+}
+.resources-secton{
+  background-color: #e9e9e9;
+  width: 21%;
+  height: 100vh;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+
+}
+.resources-secton ul{
+  font-size: 1.2rem;
+}
+.resources-secton li{
+  padding: 5px 12px;
+  width: 100%;
+  background-color: rgba(0,0,0, .1);
+  margin: 2px;
+}
+.resources-secton li:hover{
+  background-color: rgba(0,0,0, .2)
+}
+.resources-secton h3{
+  padding: 5px;
+  text-align: center;
+}
+.resources-secton h4{
+  padding: 5px 20px;
+  background-color: rgba(0,0,0, .5);
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+  margin: 10px;
+}
+.resources-secton h4:hover{
+  background-color: rgba(0,0,0, .7);
+}
+.resources-secton h4:active{
+  background-color: rgba(0,0,0, .5);
+}
+.toy-problem{
+  border-radius: 4px;
+  margin: 20px auto;
+  font-size: 1.8rem;
+  background-color: rgba(0,0,0, .05);
+  padding: 10px;
+  width: 90%;
+}
+.resources-load-toy-problem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-body-section{
+  display: flex;
+  justify-content: space-between;
+}
+.practice-button{
+  background-color: #f7970f;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+.practice-button:hover{
+  /*opacity: 1;*/
+  background-color: #f7970f;
+  color: white;
+}
+.box-code{
+  height:0px;
+}
+footer{
+  background-color: #42444E;
+  color: white;
+}
+footer .time{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .time h2{
+  padding: 5px;
+  font-size: 3rem;
+
+}
+footer .time span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+footer .time span img{
+  margin-left: 10px;
+width: 15px;
+padding-bottom: 2px;
+}
+.wheather{
+  text-decoration: underline;
+  margin: .2rem;
+}
+@-webkit-keyframes spinnerRotate
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotate
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+#spin{
+    -webkit-animation-name: spinnerRotate;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate;
+    -moz-animation-duration: 12s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate;
+    -ms-animation-duration: 12s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+.main-foot{
+  background: black;
+  height: 400px;
+}
+.check-your-city{
+  color: black;
+}
+
+
+
+@media( max-width: 700px){
+  .main-body-section{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .resources-secton{
+    width: 100%;
+    height: 10vh;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .workstation-secton{
+    width: 100%;
+    margin: 15px;
+    height: 90vh;
+    min-height: 350px;
+    display: inline-block;
+  }
+}

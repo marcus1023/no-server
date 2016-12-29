@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="resources">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Server Project</title>
+<link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+
+
+</head>
+<body ng-controller="mainController">
+  <main role="main">
+    <header>
+      <div class="phone-header">
+        <ul>
+          <div class="phone-header-left">
+              <a href=""><ul>
+                <li>Leven</li>
+                <li> ></li>
+              </ul>
+          </div></a>
+          <div class="phone-header-right">
+            <li ui-sref="pluralsite" >Learn</li>
+            <li ui-sref="pixlr" >Design</li>
+            <li ui-sref="cssbutton" >CSS</li>
+            <li ui-sref="replit" ><button type="button" class="btn btn-warning">JS Practice</button></li>
+          </div>
+        </ul>
+
+      </div>
+      <div class="main-header">
+
+      </div>
+
+    </header>
+    <ui-view></ui-view>
+    <footer >
+      <div class="time ">
+        <h2>Howdy, {{name}}</h2>
+        <show-time></show-time>
+        <span>It is currently <p class="wheather">SUNNY</p> and {{philiTemp}}°F in Philidalphia <a href="https://weather.com/weather/today/l/USPA1276:1:US"><img id="spin"src="img/SUNNY.png"></a></span>
+      </div>
+      <div class="check-your-city">
+        <span>Check your city: </span>
+        <form ng-submit="testTester(city, state)">
+          <input placeholder="City..." ng-model="city"></input>
+          <input placeholder="State..." ng-model="state"></input>
+
+        </form>
+        <!-- <button ng-submit="testTester(city)">Check</button> -->
+
+      </div>
+    </footer>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!--Our Custom Script Files-->
+<script src="./js/app.js"></script>
+<script src="./js/mainService.js"></script>
+<script src="./js/mainController.js"></script>
+<script src="./js/time-directive.js"></script>
+
+</body>
+</html>
