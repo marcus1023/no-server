@@ -12,6 +12,14 @@ h2{
 h3{
   font-size: 1.7rem;
 }
+.phone-header-ham img{
+  width: 25px;
+  height: 18px;
+  /*margin-right: 30px;*/
+}
+.phone-header-ham {
+  display: none;
+}
 .phone-header{
 height: 50px;
 width: 100%;
@@ -215,10 +223,29 @@ padding-bottom: 2px;
 .check-your-city{
   color: black;
 }
-
-
+.dropdown-menu a{
+  color: #f7970f;
+  display: block;
+}
+.dropdown, .dropup {
+    position: relative;
+    margin-right: 10px;
+}
+.dropdown-menu a:hover{
+  background: rgba(0,0,0, .05);
+}
+.dropdown-menu {
+  color: #f7970f;
+  text-align: center;
+}
 
 @media( max-width: 700px){
+  .phone-header-right{
+    display: none;
+  }
+  .phone-header-ham {
+    display: flex;
+  }
   .main-body-section{
     display: flex;
     flex-direction: column-reverse;
