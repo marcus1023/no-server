@@ -56,6 +56,17 @@ var defer = $q.defer();
  })
  return defer.promise;
 }
+this.getNewWeather = function(){
+var defer = $q.defer();
+  $http({
+   method: "GET",
+   url: 'http://api.wunderground.com/api/d58705ef6515bfbc/conditions/q/' + state + city +'.json'
+ }).then(function(res){
+   var data = res.data.current_observation
+    console.log('worked' + data)
+ })
+ return defer.promise;
+}
 
 
 oldQuestionArray = []

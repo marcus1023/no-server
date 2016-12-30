@@ -3,14 +3,16 @@ angular.module('resources').controller('mainController', function(mainService, $
 $scope.test = "this app is working"
 
 
-$scope.testTester = function(city, state){
-  console.log(city + state)
-}
+
+
 
 $scope.getServiceNumber = function(){
   $scope.questions = mainService.getQuestion();
 
 }
+
+
+
 
 // makes a random selection
 $scope.randomQuestionFunction = function(){
