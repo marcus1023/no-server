@@ -20,6 +20,12 @@ angular.module('resources').directive('showTime', function(){
       else if(n === 5){
         n = "Friday"
       }
+      else if(n === 6){
+        n = "Saturday"
+      }
+      else if(n === 7){
+        n = "Sunday"
+      }
       console.log(n)
       scope.day = n;
       scope.time = currentTime;
