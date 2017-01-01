@@ -23,7 +23,7 @@ angular.module('resources').directive('showTime', function(){
       else if(n === 6){
         n = "Saturday"
       }
-      else if(n === 7){
+      else if(n === 0){
         n = "Sunday"
       }
       console.log(n)
