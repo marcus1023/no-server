@@ -56,6 +56,11 @@ var defer = $q.defer();
  })
  return defer.promise;
 }
+
+
+
+
+
 this.getNewWeather = function(){
 var defer = $q.defer();
   $http({

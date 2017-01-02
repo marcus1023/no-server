@@ -57,6 +57,14 @@ angular.module('resources',  ['ui.router'])
             url:'/enjoyCss',
             templateUrl: "../templates/css-enjoy-tmpl.html"
         })
+        .state('home',{
+            url:'/home',
+            templateUrl: "../templates/home-tmpl.html"
+        })
+        .state('origin',{
+            url:'/origin',
+            templateUrl: "../templates/origin-tmpl.html"
+        })
 
 
 

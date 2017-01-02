@@ -12,6 +12,23 @@ h2{
 h3{
   font-size: 1.7rem;
 }
+.nav-bar-new ul{
+  width: 400px;
+}
+.nav-bar-new li {
+  display: inline-block;
+}
+.nav-bar-new li div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background-color: #f7970f;
+ padding: 5px 15px;
+ border-radius: 3px;
+}
+.nav-bar-new img{
+width: 20px;
+}
 .phone-header-ham img{
   width: 25px;
   height: 18px;
@@ -86,7 +103,6 @@ background-color: #e3e3e3;
 .resources-secton{
   background-color: #e9e9e9;
   width: 21%;
-  height: 100vh;
   min-height: 350px;
   display: flex;
   flex-direction: column;
@@ -252,6 +268,210 @@ padding-bottom: 2px;
   justify-content: center;
   display: flex;
 }
+.home-screen-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #f7970f;
+  position: absolute;
+  height: 100vh;
+  z-index: 2000;
+  width:100%;
+  top: 0;
+}
+.welcome-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-section h3{
+    font-weight: 200;
+  font-size: 1.2rem;
+}
+.welcome-section h1{
+  margin-top: 10px;
+    font-weight: 200;
+  font-size: 5rem;
+
+}
+.welcome-section ul{
+  display: flex;
+}
+.welcome-section li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 30px;
+  margin: 20px;
+  border-radius: 5px;
+}
+.welcome-section li img{
+  width: 150px;
+}
+.welcome-section-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.enter-button{
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding: 8px 15px 5px 15px;
+  background-color: white;
+  border: 2px solid white;
+  color: #f7970f;
+  border-radius: 3px;
+}
+.enter-button-two{
+  display: none;
+}
+.enter-button:hover{
+  color: white;
+  background: #f7970f;
+}
+.loading-section{
+  position: absolute;
+  color: #f7970f;
+  top: 0;
+  z-index: 1999;
+  height: 100vh;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home-info{
+  width: 200px;
+  padding-top: 10px;
+  margin-top: 50px;
+  border-top: 2px solid white;
+}
+.home-info a{
+  color: white;
+}
+.home-info span{
+  font-weight: 300;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  float: right;
+}
+.home-info span:hover{
+  opacity: .8;
+}
+.home-website-info{
+display: none;
+}
+.home-css-info{
+display: none;
+}
+.home-design-info{
+display: none;
+}
+.home-js-info{
+display: none;
+}
+
+
+/* Loading anamation*/
+.sk-folding-cube {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f7970f;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+.show-me-not{
+  display: none;
+}
+.show-me{
+  display: flex;
+}
+/*@ media section!!*/
 
 @media( max-width: 700px){
   .phone-header-right{
@@ -266,7 +486,7 @@ padding-bottom: 2px;
   }
   .resources-secton{
     width: 100%;
-    height: 10vh;
+    height: auto;
     min-height: 250px;
     display: flex;
     flex-direction: column;
@@ -278,5 +498,36 @@ padding-bottom: 2px;
     height: 90vh;
     min-height: 350px;
     display: inline-block;
+  }
+  .welcome-section h1{
+    margin-top: 10px;
+      font-weight: 200;
+    font-size: 4rem;
+  }
+  .welcome-section ul{
+    flex-direction: column;
+
+  }
+  .welcome-section li{
+    margin: 10px;
+    border: none;
+    border-top: 2px solid rgba(0,0,0, .05)
+  }
+  /*.welcome-section li:hover{
+    margin: 110px;
+    border: none;
+    border-top: 2px solid rgba(0,0,0, .05)
+  }*/
+  .welcome-section li:first-child{
+    /*margin-top: 10px;*/
+  }
+  .home-screen-section{
+    height: auto;
+  }
+  .enter-button{
+    display: none;
+  }
+  .enter-button-two{
+    display: flex;
   }
 }
