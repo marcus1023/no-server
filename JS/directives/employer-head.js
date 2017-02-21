@@ -1,6 +1,6 @@
-angular.module('excelCourses').directive('mainHead', function(){
+angular.module('excelCourses').directive('employerHead', function(){
   return {
     restrict: 'AE',
-    templateUrl: 'JS/templates/directives/mainHeader.html'
+    templateUrl: 'JS/templates/directives/employer-head.html'
   }
 });
