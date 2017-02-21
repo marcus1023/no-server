@@ -6,6 +6,11 @@ angular.module('excelCourses',  ['ui.router'])
           templateUrl: "./js/templates/home-tmpl.html",
           controller: "mainController"
       })
+      .state("services",{
+          url:'/services',
+          templateUrl: "./JS/templates/services.html",
+          controller: "mainController"
+      })
 
 
 
