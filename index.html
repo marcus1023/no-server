@@ -1,65 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="resources">
+<html lang="en" ng-app="excelCourses">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beginner Resources</title>
+    <title>Excel Resources</title>
 <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="shortcut icon" href="https://onecoolsite.files.wordpress.com/2010/03/readstar.png">
+    <link rel="stylesheet" href="./styles/headers-footers.css">
+    <link rel="shortcut icon" href="http://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-excel-icon.png">
 
 </head>
 <body ng-controller="mainController">
-  <main role="main">
-
-  <!-- Normal header section -->
-    <header>
-      <div class="phone-header">
-        <ul>
-          <div class="phone-header-left">
-              <a ui-sref="home" ><ul>
-                <li>Leven</li>
-                <li> ></li>
-              </ul>
-          </div></a>
-          <div class="phone-header-right">
-            <li ui-sref="pluralsite" >Learn</li>
-            <li ui-sref="pixlr" >Design</li>
-            <li ui-sref="enjoyCss" >CSS</li>
-            <li ui-sref="replit" ><button type="button" class="btn btn-warning">JS Practice</button></li>
-          </div>
-<!-- Bootstrap dropdown menu -->
-          <div class="dropdown closed phone-header-ham">
-            <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="img/828139_preferences_512x512.png">
-            </button>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" ui-sref="pluralsite" >Learn</a><br>
-              <a class="dropdown-item" ui-sref="pixlr" >Design</a><br>
-              <a class="dropdown-item" ui-sref="enjoyCss" >CSS</a><br>
-              <a class="dropdown-item" ui-sref="replit" >Practice</a>
-            </div>
-          </div>
-        </ul>
-
-      </div>
-
-<!-- Workstation section -->
-    </header>
+  <main>
     <ui-view></ui-view>
-    <footer >
-      <div class="time ">
-        <h2>Howdy, {{name}}</h2>
-        <show-time></show-time>
-        <span>It is currently <p class="wheather">SUNNY</p> and {{philiTemp}}°F in Philidalphia <a href="https://weather.com/weather/today/l/USPA1276:1:US"><img id="spin"src="img/SUNNY.png"></a></span>
-      </div>
-
-    </footer>
-
-</main>
-
-
+  </main>
+</body>
+</html>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
@@ -72,8 +29,8 @@
 <script src="./js/app.js"></script>
 <script src="./js/mainController.js"></script>
 <script src="./js/mainService.js"></script>
-<script src="./js/time-directive.js"></script>
-<script src="./js/test-directive.js"></script>
-<script src="./js/main.js"></script>
+<script src="./js/directives/employer-head.js"></script>
+<!-- Custom Directives -->
+
 </body>
 </html>
